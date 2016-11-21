@@ -1,0 +1,112 @@
+.overlay {
+  padding-top: 9em;
+  padding-bottom: 9em;
+  min-height: 207px;
+  overflow: hidden;
+}
+
+.overlay-img {
+  background-image: url(https://www.learnersguild.org/images/photo2.jpg);
+  background-position: center;
+  background-size: cover;
+  opacity: 0.4;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  max-height: 495px;
+  top: 64px;
+  left: 0;
+  margin: auto;
+}
+
+.overlay-header {
+  max width: 80em;
+  margin: auto;
+  text-align: left;
+  padding: 0 2em;
+  position: relative;
+}
+
+.overlay-heading {
+  margin-top: 0px;
+  margin-bottom: 10px;
+}
+
+.overlay-message {
+  font-size: 28px;
+}
+
+@media only screen and (max-width: 1800px) {
+  .overlay-img {
+    width: 100%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 720px) {
+  .overlay-header {
+    width: 600px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    max-width: 80em;
+    padding: 0 2em;
+    position: relative;
+  }
+
+  .overlay-heading {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    text-align: center;
+    max-width: 80em;
+    padding: 1em 2em;
+  }
+
+  .overlay {
+    padding: 1em;
+  }
+}
+
+@media only screen and (max-width: 485px) {
+  .overlay-img {
+    width: 100%;
+    max-height: 360px;
+  }
+
+  .overlay-header {
+    width: 300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: left;
+    max-width: 80em;
+    padding: 0 2em;
+    position: relative;
+  }
+
+  .overlay-heading {
+    width: 250px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    max-width: 80em;
+    padding: 0em 1em;
+  }
+
+  .overlay {
+    padding: 1em;
+  }
+  
+  .overlay-message {
+    font-size: 20px;
+  }
+}
