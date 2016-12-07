@@ -1,0 +1,75 @@
+/*Styling for all widgets*/
+
+.widget {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  background-color: #2a2a2a;
+}
+
+.widget-width-1 {
+  width: 230px;
+}
+
+.widget-height-1 {
+  height: 230px;
+}
+
+.widget-body {
+  padding: 16px 14px;
+}
+
+header {
+  height: 23px;
+  padding: 12px 14px 6px 14px;
+  top: 0;
+  background-color: #4d4f50;
+}
+
+.flex-center {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+}
+
+.body-text {
+  font-size: 1.4em;
+}
+
+/*Image styling*/
+.image-wrapper {
+  max-height: 189px;
+  overflow: hidden;
+}
+
+.widget-image {
+  width: 100%;
+}
+
+.transparent {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+/*Clock styling*/
+.clock-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.clockface {
+  background-color: #1f1f1f;
+  padding: 20px 12px;
+  font-size: 3em;
+}
+
+.date {
+  padding: 12px;
+}
+
+sub {
+  font-size: 60%;
+  vertical-align: baseline;
+  position: relative;
+  height: 0;
+  line-height: 1;
+}
