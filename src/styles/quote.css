@@ -7,11 +7,7 @@
 }
 
 @media only screen and (max-width: 720px) {
-<<<<<<< HEAD:src/styles/quote.css
   .quotes-container {
-=======
-  [class*="quotes-container"] {
->>>>>>> b4bab980ab2cfffcf1df726a725eabf990607c4a:src/styles/quote.css
       width: 45em;
       display: flex;
       justify-content: center;
@@ -19,20 +15,11 @@
       text-align: center;
       justify-content: center;
       position: relative;
-<<<<<<< HEAD:src/styles/quote.css
-=======
-      margin-top: -100px;
-      margin-left: 165px;
->>>>>>> b4bab980ab2cfffcf1df726a725eabf990607c4a:src/styles/quote.css
   }
 }
 
 @media only screen and (max-width: 485px) {
-<<<<<<< HEAD:src/styles/quote.css
   .quotes-container {
-=======
-  [class*="quotes-container"] {
->>>>>>> b4bab980ab2cfffcf1df726a725eabf990607c4a:src/styles/quote.css
       width: 45em;
       display: flex;
       justify-content: center;
@@ -40,11 +27,6 @@
       text-align: center;
       justify-content: center;
       position: relative;
-<<<<<<< HEAD:src/styles/quote.css
-=======
-      margin-top: -75px;
-      margin-left: -0px;
->>>>>>> b4bab980ab2cfffcf1df726a725eabf990607c4a:src/styles/quote.css
   }
 }
 
