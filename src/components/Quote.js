@@ -2,14 +2,14 @@ import React, { Component } from 'react'
 import '../styles/quote.css'
 
 class Quote extends Component {
-  render () {
+  render() {
     return (
-      <div className='customer-blockquote'>
-        <p className='customer-testimonial'>
+      <div className="customer-blockquote">
+        <p className="customer-testimonial">
           {this.props.quote}
         </p>
-        <div className='inner'>
-          <img src={this.props.url} role='presentation' />
+        <div className="inner">
+          <img src={this.props.url} role="presentation" />
           <cite>{this.props.name}</cite>
         </div>
       </div>

@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
-import "../../styles/widget/widget.css"
+import '../../styles/widget/widget.css'
 
 class Header extends Component {
-  static propTypes = { title: React.PropTypes.string.isRequired }
+  constructor( props ) {
+    super( props )
+    this.propTypes = { title: React.PropTypes.string.isRequired }
+  }
 
   render() {
     const { title } = this.props

@@ -7,9 +7,9 @@ class Dashboard extends Component {
   render() {
     return (
       <div className="dashboard-home">
-        <DashNav/>
-        <LocalNav/>
-        <DashboardBody/>
+        <DashNav />
+        <LocalNav />
+        <DashboardBody />
       </div>
     )
   }

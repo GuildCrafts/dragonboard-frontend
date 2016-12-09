@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import '../styles/dash_nav.css'
 
 class DashNav extends Component {
-  render () {
+  render() {
     return (
       <nav className="dash-nav">
         <div className="dashboard-menu"> &#9776; Dashboards </div>

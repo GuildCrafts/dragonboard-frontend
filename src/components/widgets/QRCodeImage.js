@@ -1,11 +1,14 @@
 import React, { Component } from 'react'
-import "../../styles/widget/widget.css"
+import '../../styles/widget/widget.css'
 import qrCodeGenerator from 'qrcode-npm'
 
 class QRCodeImage extends Component {
-  static defaultProps = {
-    width: 146,
-    height: 146
+  constructor( props ) {
+    super( props )
+    this.defaultProps = {
+      width: 146,
+      height: 146
+    }
   }
 
   qrSource() {
@@ -19,10 +22,10 @@ class QRCodeImage extends Component {
 
   render() {
     return (
-      <img src={ this.qrSource() }
-      width={ this.props.width }
-      height={ this.props.height }
-      alt="QR Code"/>
+      <img src={this.qrSource()}
+        width={this.props.width}
+        height={this.props.height}
+        alt="QR Code" />
     )
   }
 }
