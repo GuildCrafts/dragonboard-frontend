@@ -5,6 +5,7 @@ import QRCode from './widgets/QRCode'
 import Clock from './widgets/Clock'
 import '../styles/dash_body.css'
 
+<<<<<<< HEAD
 const dashboardBodyProps = {
   widgets: [
     {
@@ -50,6 +51,8 @@ const dashboardBodyProps = {
   ]
 }
 
+=======
+>>>>>>> c8776e9... refactored redux, took state out of clock component and mapStateToProps
 const BuildWidgets = widgetArray =>
   widgetArray.map( widget => (
     {
@@ -61,7 +64,7 @@ const BuildWidgets = widgetArray =>
 
 class DashboardBody extends Component {
   render() {
-    const renderWidgets = BuildWidgets(dashboardBodyProps.widgets)
+    const renderWidgets = BuildWidgets( this.props.widgets )
 
     return (
       <div className="dash-main">
