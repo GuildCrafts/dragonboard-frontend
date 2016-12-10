@@ -5,51 +5,6 @@ import QRCode from './widgets/QRCode'
 import Clock from './widgets/Clock'
 import '../styles/dash_body.css'
 
-const dashboardBodyProps = {
-  widgets: [
-    {
-      type: 'Text',
-      title: 'Text',
-      size: '1x1',
-      y: '10px',
-      x: '340px',
-      message: {
-        one: { text: 'Body text', type: 'Text' },
-        two: { text: 'blarg', type: 'Alert' },
-        three: { text: 'blarg', type: 'Info' },
-        four: { text: 'blarg', type: 'Text' },
-      },
-    },
-    {
-      type: 'Image',
-      title: 'Image',
-      size: '1x1',
-      y: '10px',
-      x: '100px',
-      path: 'http://www.easypano.com/images/pw/v3/banner.jpg',
-      reload: 3
-    },
-    {
-      type: 'Clock',
-      title: 'Clock',
-      size: '1x1',
-      y: '10px',
-      x: '820px',
-      format: 0,
-      country: 'United States',
-      city: 'Los Angeles'
-    },
-    {
-      type: 'QRCode',
-      title: 'QR Code',
-      size: '1x1',
-      y: '10px',
-      x: '580px',
-      url: 'http://www.easypano.com/images/pw/v3/banner.jpg'
-    },
-  ]
-}
-
 const BuildWidgets = widgetArray =>
   widgetArray.map( widget => (
     {
@@ -61,8 +16,8 @@ const BuildWidgets = widgetArray =>
 
 class DashboardBody extends Component {
   render() {
-    const renderWidgets = BuildWidgets(dashboardBodyProps.widgets)
-
+    console.log('this.props', this.props)
+    const renderWidgets = BuildWidgets( this.props.widgets )
     return (
       <div className="dash-main">
         {renderWidgets}

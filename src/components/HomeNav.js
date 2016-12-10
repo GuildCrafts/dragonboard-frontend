@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import NavMenu from './NavMenu'
 import '../styles/home_nav.css'
-import '../styles/dropdown.css'
 
 class HomeNav extends Component {
   render () {
@@ -32,31 +31,10 @@ class HomeNav extends Component {
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     )
   }
 }
-
-let NavMenu = React.createClass({
-  getDefaultProps() {
-    return {
-      isOpen: false
-    }
-  },
-
-  render() {
-    if(this.props.isOpen)
-    {
-    return <div className="home-nav-dropdown">
-      <ul className="home-nav-dropdown-content">
-        <li><a href="#">EXAMPLE 1</a></li>
-      </ul>
-    </div>
-    }
-    return null
-  }
-})
 
 let NavMenuButton = React.createClass({
   getInitialState () {
