@@ -17,5 +17,4 @@ class Dashboard extends Component {
   }
 }
 
-export default connect( state => ({ widgets: state.widgets }) )( Dashboard )
-
+export default connect( state => ({ widgets: state.clock.widgets }) )( Dashboard )

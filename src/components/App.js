@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import Dashboard from './Dashboard'
+import HomeNav from './HomeNav'
+import HomeBody from './HomeBody'
+import HomeFooter from './HomeFooter'
 import '../styles/home_body.css'
 import '../styles/home_nav.css'
 import '../styles/button.css'
@@ -9,16 +11,11 @@ import '../styles/button.css'
 class App extends Component {
   render () {
     return (
-<<<<<<< HEAD
       <div className='home-page-wrapper'>
-        <Dashboard/>
+        {/* <Dashboard widgets={this.props.widgets} /> */}
         <HomeNav />
         <HomeBody />
         <HomeFooter />
-=======
-      <div className="home-page">
-        <Dashboard widgets={this.props.widgets} />
->>>>>>> c8776e9... refactored redux, took state out of clock component and mapStateToProps
       </div>
     )
   }

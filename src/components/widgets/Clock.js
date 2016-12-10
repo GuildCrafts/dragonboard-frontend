@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import moment from 'moment'
 
-import { SET_DATE_AND_TIME } from '../../actions/clock'
 import ACTIONS from '../../actions/clock'
 import Header from './Header'
 
@@ -21,9 +20,8 @@ class Clock extends Component {
   }
 
   render() {
+    const { title, x, y } = this.props
     const positionStyle = { top: y, left: x }
-    const { title, x, y, format, data } = this.props
-    const { time, amPm, dayOfWeek, date } = data
 
     return (
       <article>
