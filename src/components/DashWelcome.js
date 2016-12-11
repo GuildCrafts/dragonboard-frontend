@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "../styles/dash-welcome.css"
+import '../styles/dash-welcome.css'
 
 class DashWelcome extends Component {
   render() {

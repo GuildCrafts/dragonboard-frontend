@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import "../../styles/widget/widget.scss"
-import "../../styles/widget/clock.scss"
+import '../../styles/widget/widget.scss'
+import '../../styles/widget/clock.scss'
 import moment from 'moment'
 import Header from './Header'
 
@@ -14,18 +14,18 @@ class Clock extends Component {
       date: null
     }
 
-    this.setDateAndTime = this.setDateAndTime.bind(this)
+    this.setDateAndTime = this.setDateAndTime.bind( this )
   }
 
   setDateAndTime() {
     const time = moment()
 
-    this.setState({
+    this.setState( {
       time: time.format( 'h:mm' ),
       amPm: time.format( 'A' ),
-      dayOfWeek: time.format( 'dddd') ,
+      dayOfWeek: time.format( 'dddd' ) ,
       date: time.format( 'D MMM YYYY' )
-    })
+    } )
   }
 
   componentWillMount() {
@@ -33,9 +33,9 @@ class Clock extends Component {
   }
 
   componentDidMount() {
-    window.setInterval( function () {
+    window.setInterval( function() {
       this.setDateAndTime()
-    }.bind( this ), 10000)
+    }.bind( this ), 10000 )
   }
 
   render() {

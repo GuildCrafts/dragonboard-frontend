@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import "../../styles/widget/widget.scss"
-import "../../styles/widget/image.scss"
+import '../../styles/widget/widget.scss'
+import '../../styles/widget/image.scss'
 import Header from './Header'
 
 class Image extends Component {

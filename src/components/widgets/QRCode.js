@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import "../../styles/widget/widget.scss"
+import '../../styles/widget/widget.scss'
 import QRCodeImage from './QRCodeImage'
 import Header from './Header'
 

@@ -52,16 +52,16 @@ const dashboardBodyProps = {
 
 const BuildWidgets = widgetArray =>
   widgetArray.map( widget => (
-    {
-      'Text': <Text { ...widget } key={ widget.title } />,
-      'Image': <Image { ...widget } key={ widget.title } />,
-      'QRCode': <QRCode { ...widget } key={ widget.title } />,
-      'Clock': <Clock { ...widget } key={ widget.title } />
-    }[ widget.type ]))
+  {
+    'Text': <Text { ...widget } key={ widget.title } />,
+    'Image': <Image { ...widget } key={ widget.title } />,
+    'QRCode': <QRCode { ...widget } key={ widget.title } />,
+    'Clock': <Clock { ...widget } key={ widget.title } />
+  }[ widget.type ] ) )
 
 class DashboardBody extends Component {
   render() {
-    const renderWidgets = BuildWidgets(dashboardBodyProps.widgets)
+    const renderWidgets = BuildWidgets( dashboardBodyProps.widgets )
 
     return (
       <div className="dash-main">

@@ -5,13 +5,13 @@ import '../styles/home_nav.css'
 import '../styles/button.css'
 
 class App extends Component {
-  render () {
+  render() {
     return (
-      <div className='home-page-wrapper'>
+      <div className="home-page-wrapper">
         <Dashboard/>
-        <HomeNav />
+        {/* <HomeNav />
         <HomeBody />
-        <HomeFooter />
+        <HomeFooter /> */}
       </div>
     )
   }
