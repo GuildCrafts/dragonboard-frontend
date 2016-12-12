@@ -1,0 +1,12 @@
+.more-triangle {
+  border-bottom: 5px solid transparent;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  border-top: 5px solid ;
+  max-width: 0px;
+  max-height: 0px;
+  position: absolute;
+  right: 520px;
+  top: 29px;
+  z-index: 15;
+}

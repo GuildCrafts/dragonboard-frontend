@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import NavMenu from './NavMenu'
+import NavMenuButton from './NavMenuButton'
 import '../styles/home_nav.css'
 import '../styles/dropdown.css'
 
@@ -32,8 +33,7 @@ class HomeNav extends Component {
             </div>
           </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     )
   }
 }
@@ -55,40 +55,6 @@ let NavMenu = React.createClass({
     </div>
     }
     return null
-  }
-})
-
-let NavMenuButton = React.createClass({
-  getInitialState () {
-    return {
-      isOpen: false
-    }
-  },
-
-  toggleMenu (event) {
-    // event.stopPropagation()
-    this.setState({isOpen: !this.state.isOpen})
-  },
-
-  onClose () {
-    this.setState({isOpen: false})
-  },
-
-  componentDidMount () {
-    document.body.addEventListener('click', this.onClose)
-  },
-
-  componentWillUnmount () {
-    document.body.removeEventListener('click', this.onClose)
-  },
-
-  render () {
-    return <div>
-      <a onClick={this.toggleMenu} href='#'>More
-          <div className='more-triangle' />
-      </a>
-      <NavMenu isOpen={this.state.isOpen} />
-    </div>
   }
 })
 
