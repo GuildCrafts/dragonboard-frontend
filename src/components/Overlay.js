@@ -7,11 +7,20 @@ class Overlay extends Component {
       <section className='overlay-container'>
         <div className='overlay-img' role='presentation'>
         <div className='overlay-header'>
-          <h1 className='overlay-heading'>LIVE TV DASHBOARD SOFTWARE
-              <div className='overlay-message'>Focus your teams and improve your KPIs</div>
-          </h1>
-          <a href='#' className='flat-button trial-button'>Start your free trial</a>
-          <a href='#' className='flat-button demo-button'>Book a demo</a>
+          <div className='overlay-header-text'>
+            <h1 className='overlay-heading'>LIVE TV DASHBOARD SOFTWARE</h1>
+            <div className='overlay-message'>
+          </div>
+            Focus your teams and improve your KPIs
+          </div>
+
+          <div className='overlay-buttons'>
+            <a href='#' className='flat-button trial-button'>
+              Start your free trial
+            </a>
+            <a href='#' className='flat-button demo-button'>Book a demo</a>
+          </div>
+
         </div>
         </div>
       </section>

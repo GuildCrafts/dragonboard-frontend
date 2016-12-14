@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 
 import '../styles/home_nav.css'
 
-class NavMenu extends Component {
+class NavDropdownMenu extends Component {
   static defaultProps () {
     return { isOpen: false }
   }
@@ -23,4 +23,4 @@ class NavMenu extends Component {
   }
 }
 
-export default NavMenu
+export default NavDropdownMenu

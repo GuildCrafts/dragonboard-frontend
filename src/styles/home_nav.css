@@ -16,7 +16,7 @@
 }
 
 .home-nav-menu a:not(:last-child){
-  margin-left: 25px;
+  margin-left: 15px;
 }
 
 .home-nav-menu .home-nav-grey {
@@ -34,9 +34,9 @@
   font-family: 'Catamaran', sans-serif;
   font-weight: 300;
   display: flex;
-  flex-direction: row;
   align-items: center;
   overflow: hidden;
+  position: relative;
 }
 
 .logo {
@@ -44,7 +44,6 @@
   flex-direction: row;
   align-items: center;
   margin: 14px 0 14px 0;
-  width: 210px;
   height: 36px;
   color: #fff;
 }
@@ -72,6 +71,18 @@
   margin-left: 10px;
 }
 
+@media only screen and (max-width: 1100px) {
+  .logo img {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 860px) {
+  .logo img {
+    display: initial;
+  }
+}
+
 .login-nav:hover {
   color: #ccc;
 }
@@ -91,7 +102,7 @@
   white-space: nowrap;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 860px) {
   .home-nav-right {
     visibility: hidden;
   }
@@ -125,7 +136,9 @@
 }
 
 .nav-dropdown {
+  position: relative;
   display: inline-block;
+  margin-right: -15px;
 }
 
 .nav-dropdown div a {
@@ -148,12 +161,6 @@
 
 .nav-dropdown div {
   margin-right: 10px
-}
-
-@media only screen and (max-width: 720px) {
-  [class*="home-nav-right"] {
-    visibility: hidden;
-  }
 }
 
 .sub-nav li {
@@ -233,11 +240,6 @@
   color: #8dc63f;
 }
 
-.nav-dropdown {
-  position: relative;
-  display: inline-block;
-}
-
 .home-nav-dropdown {
   position: absolute;
   background-color: #fff;
@@ -279,16 +281,6 @@
   background-color: #76a535;
 }
 
-@media only screen and (max-width: 720px) {
-  [class*="home-nav-right"] {
-    visibility: hidden;
-  }
-}
-
-.nav-dropdown {
-  position: relative;
-}
-
 .sub-nav {
   position: absolute;
   display: inline-block;
@@ -310,4 +302,49 @@
 
 .nav-dropdown:hover > .sub-nav {
   display: block;
+}
+
+.hamburger-menu-toggle .hamburger-bar:first-child{
+  transform: translateY(-16px);
+}
+
+.hamburger-menu-toggle .hamburger-bar:nth-child(2){
+  transform: translateY(-8px);
+}
+
+.hamburger-menu-toggle:hover .hamburger-bar {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.hamburger-bar {
+  background-color: white;
+  opacity: .9;
+  width: 30px;
+  height: 3px;
+  border-radius: 100px;
+  position: absolute;
+  top: 38px;
+  right: 12px;
+  transition: all 0.5s;
+  visibility: hidden;
+}
+
+.hamburger-menu-toggle {
+  height: 100%;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.hamburger-bar:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+@media only screen and (max-width: 860px) {
+  .hamburger-bar {
+    visibility: visible;
+  }
 }
