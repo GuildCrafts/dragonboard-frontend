@@ -105,18 +105,21 @@
 }
 
 .account-icon {
-  background-color: #F0F2F3;
+  background-color: #404344;
   height: 33px;
   width: 33px;
-  min-width: 33px;
-  border-radius: 2px;
   position:relative;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.account-icon :hover {
+  cursor: pointer;
 }
 
 .account-icon span {
-  position:absolute;
+  position: relative;
   font-size: 1.2em;
-  top: 7px;
-  left: 5px;
-  color: #24272A;
+  top: 25%;
+  color: #fff;
 }

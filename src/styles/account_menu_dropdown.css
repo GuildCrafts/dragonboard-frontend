@@ -1,0 +1,29 @@
+.account-menu {
+  position: relative;
+  top: 7px;
+}
+
+.account-menu-list {
+  position: absolute;
+  height: auto;
+  z-index: 1;
+  min-width: 150px;
+  right: -30px;
+  left: auto;
+  background-color: #E1E2E5;
+}
+
+.account-menu-list-item {
+  width: 100%;
+  font-size: 0.9rem;
+  padding: 12px 10px 12px 10px;
+}
+
+.account-menu-list-item:hover {
+  background-color: #fff;
+}
+
+.account-menu-list-item a {
+  color: #393F4C;
+  text-decoration: none;
+}
