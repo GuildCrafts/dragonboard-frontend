@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import DashNav from './DashNav'
+import DashNav from '../../DashNav'
 import SideMenu from './SideMenu'
 import DetailsPageMain from './DetailsPageMain'
 

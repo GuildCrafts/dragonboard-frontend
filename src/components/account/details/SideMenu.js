@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/side_menu.css'
+import '../../../styles/side_menu.css'
 
 class SideMenu extends Component {
   render() {

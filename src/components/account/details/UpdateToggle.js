@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../styles/update_toggle.css'
+import '../../../styles/update_toggle.css'
 
 export default class UpdateToggle extends Component {
   constructor( props ) {
@@ -17,14 +17,18 @@ export default class UpdateToggle extends Component {
 
   render() {
     if ( ! this.props.active ) {
-      return <div className="edit-details__button" onClick={this.handleClick.bind(this)}>
-        <span>{ this.props.name }</span>
-      </div>
+      return (
+        <div className="edit-details__button" onClick={this.handleClick.bind(this)}>
+          <span>{ this.props.name }</span>
+        </div>
+      )
     }
     else {
-      return <div className="edit-details__button">
-        <span>Save Changes</span>
-      </div>
+      return (
+        <div className="edit-details__button">
+          <span>Save Changes</span>
+        </div>
+      )
     }
   }
 }

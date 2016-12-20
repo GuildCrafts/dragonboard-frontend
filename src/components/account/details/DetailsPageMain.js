@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import EditAccountDetails from './EditAccountDetails'
 
-import '../styles/details_page_main.css'
+import '../../../styles/details_page_main.css'
 
 class DetailsPageMain extends Component {
   render() {

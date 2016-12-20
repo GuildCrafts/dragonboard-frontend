@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import UpdateToggle from './UpdateToggle'
-import '../styles/edit_account_details.css'
+import '../../../styles/edit_account_details.css'
 
 class EditAccountDetails extends Component {
   render() {
