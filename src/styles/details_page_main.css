@@ -1,0 +1,31 @@
+.top-border {
+  position: relative;
+  background-color: #585d5f;
+  min-height: 48px;
+}
+
+.page-main {
+  position: relative;
+  max-width: 860px;
+  margin: 0 0 0 250px;
+  color: #3e4553;
+  padding: 50px 20px 50px 50px;
+}
+
+.header {
+  display: block;
+  border-bottom: solid 1px #e0e0e0
+}
+
+.page-main__title {
+  font-size: 24px;
+  margin-top: 0px;
+  margin-bottom: 0.4em;
+  font-weight: 600;
+}
+
+.page-main__subtitle {
+  font-size: 20px;
+  margin-top: 0px;
+  font-weight: 300;
+}

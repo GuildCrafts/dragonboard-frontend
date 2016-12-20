@@ -26,4 +26,5 @@
 .account-menu-list-item a {
   color: #393F4C;
   text-decoration: none;
+  display: block;
 }
