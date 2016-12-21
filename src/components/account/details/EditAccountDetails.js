@@ -3,9 +3,9 @@ import React, { Component } from 'react'
 import UpdateToggle from './UpdateToggle'
 import FormField from './FormField'
 
-import '../../../styles/edit_account_details.css'
+import '../../../styles/account/details/edit_account_details.css'
 
-class EditAccountDetails extends Component {
+export default class EditAccountDetails extends Component {
   render() {
     return (
       <div className="edit-account">
@@ -25,5 +25,3 @@ class EditAccountDetails extends Component {
     )
   }
 }
-
-export default EditAccountDetails

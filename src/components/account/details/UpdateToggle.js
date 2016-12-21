@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
-import '../../../styles/update_toggle.css'
+
+import '../../../styles/account/details/update_toggle.css'
 
 export default class UpdateToggle extends Component {
   constructor( props ) {

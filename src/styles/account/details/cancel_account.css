@@ -1,0 +1,19 @@
+.cancel-account {
+  padding: 40px 0;
+}
+
+.cancel-words {
+  font-weight: 100;
+  color: #A2A2A2;
+  font-size: 14px;
+}
+
+.cancel-words a {
+  color: #A2A2A2;
+  transition: color 0.5s;
+}
+
+.cancel-words a:hover {
+  color: #7DBA10;
+  transition: color 0.5s;
+}
