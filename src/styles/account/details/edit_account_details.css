@@ -1,0 +1,21 @@
+.update-toggle {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+}
+
+.edit-account-form__name {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.edit-account-form {
+  padding: 40px 0;
+  border-bottom: solid 1px #e0e0e0;
+}
+
+.edit-account-form__email {
+  padding-left: 50%;
+}

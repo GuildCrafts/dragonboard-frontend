@@ -1,0 +1,28 @@
+.side-menu-list {
+  display: block;
+  height: 100%;
+  width: 250px;
+  background-color: #f2f3f5;
+  position: fixed;
+  top: 96px;
+  bottom: 0;
+}
+
+.side-menu-list-item {
+  display: block;
+  padding: 22px;
+  font-weight: 300;
+}
+
+.active {
+  background-color: #fff;
+}
+
+.side-menu-list-item a {
+  text-decoration: none;
+  color: #3E4553;
+}
+
+.side-menu-list-item:hover {
+  background-color: #fff;
+}
