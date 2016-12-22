@@ -5,4 +5,45 @@
   font-weight: 100;
   padding: 20px;
   cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #3a3a3a;
+  transition: background-color 0.3s;
+}
+
+.button--save {
+  margin-right: 10px;
+  background-color: #80b636;
+  transition: background-color 0.3s;
+}
+
+.button--save:hover {
+  background-color: #3a3a3a;
+  transition: background-color 0.3s;
+}
+
+.button--cancel {
+  background-color: #c9c9c9;
+  color: #505050;
+  transition: background-color 0.3s;
+}
+
+.button--cancel:hover {
+  background-color: #a1a1a1;
+  transition: background-color 0.3s;
+}
+
+.edit-details__button {
+  float: left;
+  display: block;
+  border: none;
+  border-radius: 3px;
+  background-color: #a1a1a1;
+  color: white;
+  font-weight: 100;
+  padding: 20px;
+  cursor: pointer;
+  position: relative;
 }

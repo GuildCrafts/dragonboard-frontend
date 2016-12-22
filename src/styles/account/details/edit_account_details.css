@@ -17,5 +17,6 @@
 }
 
 .edit-account-form__email {
-  padding-left: 50%;
+  display: flex;
+  justify-content: flex-end;
 }
