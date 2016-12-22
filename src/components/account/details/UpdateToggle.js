@@ -1,25 +1,18 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
 
-import { toggleEdit } from '../../../actions/account_details'
+import { toggleEditMode } from '../../../actions/account_details'
 import Button from './Button'
 
 import '../../../styles/account/details/update_toggle.css'
 
 class UpdateToggle extends Component {
   handleClick() {
-    this.props.toggleEdit()
+    this.props.toggleEditMode()
   }
 
   render() {
-    if ( !this.props.editing ) {
-      return (
-        <Button styleName="edit-details__button"
-          onClick={this.handleClick.bind( this )}>
-          { this.props.children }
-        </Button>
-      )
-    } else {
+    if ( this.props.editing ) {
       return (
         <div className="edit-details__button--active">
           <Button styleName="button--save">Save changes</Button>
@@ -29,15 +22,20 @@ class UpdateToggle extends Component {
           </Button>
         </div>
       )
+    } else {
+      return (
+        <Button styleName="edit-details__button"
+          onClick={this.handleClick.bind( this )}>
+          { this.props.children }
+        </Button>
+      )
     }
   }
 }
 
-const mapDispatchToProps = dispatch => (
-  {
-    toggleEdit: () => dispatch( toggleEdit() )
-  }
-)
+const mapDispatchToProps = dispatch => ({
+    toggleEditMode: () => dispatch( toggleEditMode() )
+})
 
 const mapStateToProps = state => ({
   editing: state.accountDetails.generalInformation.editing

@@ -9,6 +9,7 @@ import '../../../styles/account/details/edit_account_details.css'
 class EditAccountDetails extends Component {
   render() {
     const { editing } = this.props
+
     return (
       <div className="edit-account">
         <div className="update-toggle">

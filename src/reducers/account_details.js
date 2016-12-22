@@ -1,4 +1,4 @@
-import { TOGGLE_EDIT } from '../actions/account_details'
+import { TOGGLE_EDIT_MODE } from '../actions/account_details'
 
 const initialState = {
   generalInformation: {
@@ -8,7 +8,7 @@ const initialState = {
 
 export default ( state = initialState, action ) => {
   switch( action.type ) {
-    case TOGGLE_EDIT:
+    case TOGGLE_EDIT_MODE:
       return Object.assign({}, state, {
         generalInformation: {
           editing: !state.generalInformation.editing

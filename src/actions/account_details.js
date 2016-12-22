@@ -1,5 +1,5 @@
-export const TOGGLE_EDIT = 'toggleEdit'
+export const TOGGLE_EDIT_MODE = 'toggleEditMode'
 
-const toggleEdit = section => ({ type: TOGGLE_EDIT, section })
+const toggleEditMode = () => ({ type: TOGGLE_EDIT_MODE })
 
-export { toggleEdit }
+export { toggleEditMode }
