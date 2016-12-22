@@ -7,7 +7,7 @@ export default class Button extends Component {
     const styleName = this.props.styleName ? this.props.styleName : ''
     return (
       <div className={'button ' + styleName }
-        onClick={this.props.onClick}>
+        onClick={ this.props.onClick }>
         <span>{ this.props.children }</span>
       </div>
     )
