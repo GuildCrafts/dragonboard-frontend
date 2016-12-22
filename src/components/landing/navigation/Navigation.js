@@ -34,7 +34,7 @@ export default class Navigation extends Component {
                 className="trial-input"
                 type="text"
                 placeholder="Email address" />
-              <a className="navigation-trial-button" href="#">Free Trial</a>
+              <a className="navigation-trial-button" href="/register">Free Trial</a>
             </div>
           </div>
           <Hamburger />

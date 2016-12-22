@@ -135,10 +135,6 @@
   background-color: #5d667c;
 }
 
-.landing-navigation-menu a {
-  margin-left: 10px;
-}
-
 .demonstration-button {
   color: #8dc63f;
 }
@@ -164,6 +160,7 @@
   padding: 8px 10px;
   margin-left: 0;
   color: #fff;
+  border: none;
 }
 
 .navigation-trial-button:hover {

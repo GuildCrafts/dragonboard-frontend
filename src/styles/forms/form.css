@@ -1,0 +1,30 @@
+select:hover {
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px;
+}
+
+.button__submit {
+  background: green;
+  color: white;
+}
+
+.button__cancel {
+  background: grey;
+}
+
+.form__nested-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.form__nested-dropdown__parent, .form__nested-dropdown__child {
+  display: flex;
+  flex-direction: row;
+}
+
+.form__nested-dropdown__child{
+  margin-left: 10px;
+}

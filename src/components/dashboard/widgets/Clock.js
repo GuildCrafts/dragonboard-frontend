@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import { connect } from 'react-redux'
 import moment from 'moment'
 
-import { clockTick } from '../../../actions/widgets'
+import { clockTick } from '../../../actions/widgets/actions'
 import Header from './Header'
 
 import '../../../styles/dashboard/widget/widget.css'
