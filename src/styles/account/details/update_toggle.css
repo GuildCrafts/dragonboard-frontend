@@ -1,12 +1,4 @@
-.edit-details__button {
-  float: left;
-  display: block;
-  border: none;
-  border-radius: 3px;
-  background-color: #a1a1a1;
-  color: white;
-  font-weight: 100;
-  padding: 20px;
-  cursor: pointer;
-  position: relative;
+.edit-details__button--active {
+  display: flex;
+  flex-direction: row;
 }
