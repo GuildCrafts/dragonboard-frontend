@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../../../../styles/forms/form.css'
+import '../../../../styles/forms/widget_form.css'
 
 export default class WidgetPreview extends Component {
   render() {

@@ -21,13 +21,13 @@ export default class NestedDropdownArea extends Component {
     let nestedDropdownField = this.getNestedDropdown()
 
     return (
-      <div className="form__nested-dropdown">
-        <div className="form__nested-dropdown__parent">
-          <label>{ name }</label>
+      <div className="Form__nested-dropdown">
+        <div className="Form__nested-dropdown__parent Form__Row">
+          <label className="Form__Row__label">{ name }</label>
           <ParentDropdown { ...this.props } />
         </div>
-        <div className="form__nested-dropdown__child">
-          <label>{ nestedDropdownField.name }</label>
+        <div className="Form__nested-dropdown__child Form__Row">
+          <label className="Form__Row__label">{ nestedDropdownField.name }</label>
           <Dropdown
             { ...nestedDropdownField } />
         </div>

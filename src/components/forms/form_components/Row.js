@@ -10,15 +10,17 @@ export default class Row extends Component {
     if( type === 'nested-dropdown' ) {
       return null
     } else {
-      return <label>{ name }</label>
+      return <label className="Form__Row__label">{ name }</label>
     }
   }
 
   render() {
+    const className = this.props.type==='nested-dropdown' ? null : 'Form__Row'
+
     return (
-      <div>
+      <div className={className}>
         { this.labelChild() }
-        <Field { ...this.props } />
+        <Field className="Form__Row__Field" { ...this.props } />
       </div>
     )
   }

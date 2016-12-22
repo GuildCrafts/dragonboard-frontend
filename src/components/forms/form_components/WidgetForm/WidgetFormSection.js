@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import Row from '../Row'
 import CONSTANTS from './constants'
-import '../../../../styles/forms/form.css'
+import '../../../../styles/forms/widget_form.css'
 
 export default class Section extends Component {
 
@@ -10,7 +10,7 @@ export default class Section extends Component {
 
     return (
       <div className="WidgetFormSection">
-        <div className="WidgetFormSection__type">
+        <div className="WidgetFormSection__heading">
           { type === CONSTANTS.SETUP ?
             CONSTANTS.SETUP_HEADING : CONSTANTS.SOURCE_HEADING }
         </div>

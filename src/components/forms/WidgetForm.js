@@ -69,23 +69,25 @@ class WidgetForm extends Component {
 
     return (
       <div className="WidgetForm">
-        <div className="WidgetForm__header">
-          <h1>{ type }</h1>
-        </div>
-        <Form
-          className="WidgetForm__Form">
-          {sections.map( ( section ) => (
-              <WidgetFormSection
-                { ...section }
-                key={`section-${ section.type }`}
-              />
-            )
-          )}
-          <div className="WidgetForm__buttons">
-            <Button type="submit">Add Widget</Button>
-            <Button type="cancel">Cancel</Button>
+        <div className="WidgetForm__container">
+          <div className="WidgetForm__header">
+            <h1>{ type }</h1>
           </div>
-        </Form>
+          <Form
+            className="WidgetForm__Form">
+            {sections.map( ( section ) => (
+                <WidgetFormSection
+                  { ...section }
+                  key={`section-${ section.type }`}
+                />
+              )
+            )}
+            <div className="WidgetForm__buttons">
+              <Button type="cancel">Cancel</Button>
+              <Button type="submit">Add Widget</Button>
+            </div>
+          </Form>
+        </div>
         <WidgetPreview image={ image } description={ description }/>
       </div>
     )
