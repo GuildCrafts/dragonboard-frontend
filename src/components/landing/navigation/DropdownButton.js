@@ -32,8 +32,8 @@ export default class HomeNavMenuDropdownButton extends Component {
   render() {
     return (
       <div>
-        <a onClick={ this.toggleMenu.bind( this ) } href='#'>More
-          <div className='more-triangle' />
+        <a onClick={ this.toggleMenu.bind( this ) } href="#">More
+          <div className="more-triangle" />
         </a>
         <HomeNavDropdownMenu isOpen={ this.state.isOpen } />
       </div>

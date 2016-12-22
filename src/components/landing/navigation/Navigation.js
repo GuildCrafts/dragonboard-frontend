@@ -20,12 +20,12 @@ export default class Navigation extends Component {
             </a>
           </div>
 
-          <div className='landing-navigation-right'>
-            <div className='landing-navigation-menu'>
-              <a className='landing-navigation-grey' href='#'>product</a>
-              <a className='landing-navigation-grey' href='#'>PRICING</a>
-              <a className='landing-navigation-grey' href='#'>BLOG</a>
-              <div className='navigation-dropdown'>
+          <div className="landing-navigation-right">
+            <div className="landing-navigation-menu">
+              <a className="landing-navigation-grey" href="#">product</a>
+              <a className="landing-navigation-grey" href="#">PRICING</a>
+              <a className="landing-navigation-grey" href="#">BLOG</a>
+              <div className="navigation-dropdown">
                 <DropdownButton />
               </div>
               <a className="login-navigation" href="#">LOGIN</a>
