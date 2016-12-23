@@ -1,0 +1,68 @@
+
+.Form__nested-dropdown {
+  display: flex;
+  flex-direction: column;
+}
+
+.Form__nested-dropdown__parent, .form__nested-dropdown__child {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.Form__nested-dropdown__child{
+  margin-left: 30px;
+}
+
+.Form__Row {
+  display: flex;
+  align-items: center;
+}
+
+.Form__Row__label {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  margin: 4px 0;
+  flex-basis: 50%;
+  border-radius: 4px 0 0 4px;
+  background-color: #585858;
+}
+
+.Form__Row > input, select {
+  flex-basis: 50%;
+  padding-left: 10px;
+  height: 34px;
+  border-radius: 0 4px 4px 0;
+}
+
+select:hover {
+  cursor: pointer;
+}
+
+.button {
+  padding: 10px;
+  border: none;
+}
+
+.button__submit {
+  background: #80b636;
+  color: white;
+}
+
+.button__submit:hover {
+  background: #648F2A;
+}
+
+.button__cancel {
+  background: #c9c9c9;
+  color: #505050;
+}
+
+.button__cancel:hover {
+  background: #969696;
+}
+
+input, select {
+  border: none;
+}

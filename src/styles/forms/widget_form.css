@@ -1,0 +1,32 @@
+.WidgetForm {
+  background-color: #404344;
+  color: white;
+  font-weight: lighter;
+  display: flex;
+}
+
+.WidgetForm__buttons {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.WidgetForm__container {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 60%;
+}
+
+.WidgetForm__Form {
+  margin: 0 20px 20px;
+}
+
+.WidgetForm__header {
+  margin: 20px 20px 0;
+}
+
+.WidgetPreview {
+}
+
+.WidgetFormSection__heading {
+  margin: 10px 2px;
+}

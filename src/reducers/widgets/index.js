@@ -1,4 +1,4 @@
-import { CLOCK_TICK } from '../../actions/widgets'
+import { CLOCK_TICK } from '../../actions/widgets/constants'
 import clockTicked from './clockReducer'
 
 import dummyClock from './dummy-data/dashboard-tools/clock'
